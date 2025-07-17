@@ -8,13 +8,7 @@ const server = http.createServer((req, res) => {
     filePath = 'index.html';
   } else if (req.url === '/about') {
     filePath = 'about.html';
-  }
-    
-    else if(req.url =='/results') {
-        filePath='results.html'
-    }
-    
-     else {
+  } else {
     res.statusCode = 404;
     res.end('Page Not Found');
     return;
